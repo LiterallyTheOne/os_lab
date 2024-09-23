@@ -32,6 +32,16 @@ In this course, we will focus on learning the basics and
 exploring the essential concepts that make Linux such a
 powerful and useful tool.
 
+To summarize, Linux:
+* Widely used
+* Open-source
+* Free
+* Super powerful
+* Stable and Reliable
+* Secure
+* Customizable
+* Community support
+
 ## History of Linux
 
 ## UNIX
