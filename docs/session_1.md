@@ -76,3 +76,12 @@ it lacks a good kernel which Linux came in and filled the gap.
 
 ### Linux
 
+![Linux logo](figures/Linux_logo.jpg)
+
+Linux is the kernel of an operating system.
+It was developed by Linus Torvalds in 1991.
+He was aiming to make a UNIX-like operating system as
+a personal project.
+Then he combined it with GNU tools to make it a complete
+operating system.
+
