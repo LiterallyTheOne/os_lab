@@ -26,6 +26,7 @@ In embedded systems and IoT, Linux is the go-to for most
 developers because of its flexibility.
 Even in cutting-edge fields like deep learning,
 most research papers and projects are built on Linux platforms.
+Also, all the android phones are based on Linux.
 
 For computer engineers, understanding Linux is fundamental.
 In this course, we will focus on learning the basics and
@@ -44,8 +45,34 @@ To summarize, Linux:
 
 ## History of Linux
 
-## UNIX
+### UNIX
 
-## POSIX
+![UNIX logo](figures/UNIX_logo.jpg)
 
-## GNU
+Unix is an Operating System designed by
+Ken Thompson and Dennis Ritchie in 1969.
+It stands for UNiplexed Information Computing System (UNICS).
+This Operating System is suitable for multitasking.
+It is written in C, making it easier to modify and run
+on different hardware. Also, it has a modular design in which
+programs are seen as independent entities that can work together
+to perform complex tasks.
+In Unix, everything is a file, including processes and devices.
+This Operating System had a heavy influence on Linux.
+
+### GNU
+
+![GNU logo](figures/GNU_logo.png)
+
+GNU is a project that aims to make a free UNIX-like
+operating system.
+It stands for (GNU's Not UNIX).
+it was launched by Richard Stallman in 1983.
+GNU includes essential components including
+GCC(GNU Compiler Collection), GNU Bash, and GNU core utilities
+like `ls`, `cp`, `mv`, and `rm`.
+While GNU provides so many great components,
+it lacks a good kernel which Linux came in and filled the gap.
+
+### Linux
+
