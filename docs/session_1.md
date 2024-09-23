@@ -4,9 +4,17 @@
 
 ![OS hierarchy](figures/OS_hierarchy.jpg)
 
-An **Operating System** is bridge between hardware
-and application.
+An **Operating System** is a bridge between hardware
+and applications.
+There are so many operating systems out there which were
+made for a specific purpose.
+Most famous ones are:
+* Windows
+* MacOS
+* Linux
 
+In this course we will be learning more
+about Linux.
 
 ## Why Linux
 
