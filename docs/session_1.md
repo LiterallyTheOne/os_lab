@@ -109,4 +109,22 @@ of them all are:
   * Ubuntu
 * Slackware
 
+In this class we are focusing on a user-friendly
+distro called: **Ubuntu**
+
+## Opening a terminal emulator
+
+In **Ubuntu**, you can simply open a terminal 
+using *Alt+Ctrl+T*.
+
+## pwd
+
+`pwd` stands for Print Working Directory.
+
+```bash
+pwd
+```
+
+The result of this command should show you the
+current working directory that you at.
 
