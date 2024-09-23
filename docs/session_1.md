@@ -85,3 +85,28 @@ a personal project.
 Then he combined it with GNU tools to make it a complete
 operating system.
 
+## Linux distros
+
+Linux has so many distributions, The most important
+of them all are:
+* Ubuntu
+  * Based on Debian
+* Debian
+* Fedora
+* CentOS
+  * Based on Fedora
+* Arch linux
+* OpenSUSE
+* Linux mint
+  * Based on Ubuntu, Debian
+* Kali Linux
+  * Based on Debian
+* Elementary OS
+  * Ubuntu
+* Manjaro
+  * Based on Arch Linux
+* Pop!_OS
+  * Ubuntu
+* Slackware
+
+
