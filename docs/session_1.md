@@ -126,5 +126,5 @@ pwd
 ```
 
 The result of this command should show you the
-current working directory that you are at.
+current working directory that you are in.
 
