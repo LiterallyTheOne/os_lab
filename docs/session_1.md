@@ -57,7 +57,7 @@ It is written in C, making it easier to modify and run
 on different hardware. Also, it has a modular design in which
 programs are seen as independent entities that can work together
 to perform complex tasks.
-In Unix, everything is a file, including processes and devices.
+In Unix, everything is a file, like devices.
 This Operating System had a heavy influence on Linux.
 
 ### GNU
