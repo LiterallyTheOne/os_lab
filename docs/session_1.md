@@ -1,4 +1,4 @@
-# Session 1
+# Session 1: Introduction
 
 ## Operating System
 
