@@ -221,4 +221,14 @@ of instructions that tells docker how to build a
 When a `Docker image` is created it becomes read-only,
 if we want to make a change in it, we should build another one.
 
-### layers
+### Important instruction
+
+* `FROM <image>`: Indicates the base image, for example: `FROM python`
+* `WORKDIR <path>`: Indicates the **working directory**
+* `COPY <host-path> <image-path>`: Copies files from host to
+  image.
+* `RUN <command>`: runs the specific command.
+* `ENV <name> <value>`: Sets an environment variable
+* `ESPOSE <port-number>`: Exposes which ports it is listening to
+* `CMD ["<command>", "<arg1>"]`: Sets the default command to
+  run when the container starts.
