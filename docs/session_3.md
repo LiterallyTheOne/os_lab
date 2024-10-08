@@ -50,7 +50,7 @@ in our terminal of choice.
 Open a terminal and type the code below:
 
 ```shell
-docker run -i -t ubuntu /bin/bash
+docker run -i -t --name u1 ubuntu /bin/bash
 ```
 
 If you don't have the `Ubuntu` image already,
