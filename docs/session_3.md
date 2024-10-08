@@ -149,6 +149,8 @@ There are some important options that we should know about
 * `-i`: Interactive, keeps STDIN open if not attached.
 * `-t`: Allocates a pseudo-TTY
 * `--name`: To give a name to a container
+* `--rm`: Automatically remove the container and all of its 
+  has created.
 
 for example:
 
