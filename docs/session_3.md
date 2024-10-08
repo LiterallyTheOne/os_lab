@@ -67,6 +67,7 @@ for you which you can run `bash` commands in it.
 
 As you can see in the picture above, the basic
 architecture of docker consists of three main components:
+
 * Client
 * Docker host
 * Registry
@@ -83,7 +84,7 @@ We are going to discuss more about them.
 ### Docker Daemon
 
 The **docker daemon** (`dockerd`) listens to the API requests and
-manages Docker objects such as images, containers, networks 
+manages Docker objects such as images, containers, networks
 and volumes.
 
 ### Docker Client
@@ -110,10 +111,104 @@ TODO: add more details about each tag
 for example: alpine, bullseye, bookworm
 -->
 
-
 ## Image
 
+Image is a template with instructions for creating
+a Docker container.
+If we want to make our own image, we can use `DockerFile`
+to achieve that goal.
+
 ## Container
+
+Container is a runnable instance of a Docker image.
+You can create, start, stop, move or delete a container
+using api.
+
+## Basic commands
+
+### `docker pull`
+
+`docker pull` pulls an image from Docker registry.
+For example:
+
+```shell
+docker pull ubuntu
+```
+
+The command above downloads `ubuntu` from Docker registry.
+
+### `docker run`
+
+`docker run` runs the given image.
+First argument is the image that we want to make
+a container out of and the second argument is the command
+that we want it to execute.
+
+There are some important options that we should know about
+
+* `-i`: Interactive, keeps STDIN open if not attached.
+* `-t`: Allocates a pseudo-TTY
+* `--name`: To give a name to a container
+
+for example:
+
+```shell
+docker run -it --name u1 ubuntu /bin/bash
+```
+
+### `docker ps`
+
+`docker ps` shows us a list of containers
+(default running).
+For example:
+
+```shell
+docker ps
+
+CONTAINER ID   IMAGE     COMMAND       CREATED          STATUS          PORTS     NAMES
+67a6f03640a1   ubuntu    "/bin/bash"   13 seconds ago   Up 12 seconds             u1
+```
+
+An important option of `docker ps` is:
+
+* `-a`: All containers
+
+### `docker stop`
+
+`docker stop` stops one or more containers.
+For example:
+
+```shell
+docker stop u1
+```
+
+The command above stops `u1` which we created it before
+from running.
+
+### `docker rm`
+
+`docker rm` Removes one or more containers.
+
+```shell
+docker rm u1
+```
+
+This remove the container that we made previously.
+
+### `docker images`
+
+`docker images` lists images.
+For example:
+
+```shell
+docker images
+
+ubuntu latest c22ec0081bf1 3 weeks ago 101MB
+```
+
+### `docker rmi`
+
+`docker rmi` removes one or more images.
 
 ## DockerFile
 
