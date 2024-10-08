@@ -36,7 +36,7 @@ great to run them anywhere.
 To Install docker we have so many options.
 For the purpose of learning the best way to
 install docker is via docker desktop.
-It contains `Docker Daemon`, `Docker client` 
+It contains `Docker Daemon`, `Docker client`
 and `Docker Compose` which we are going to work with a lot.
 Also, it has a UI to control All the things that we need.
 
@@ -61,12 +61,44 @@ of this command more.
 Right now, You should see a `bash terminal` opening up
 for you which you can run `bash` commands in it.
 
+## Docker Architecture
+
+![docker architecture](figures/docker_architecture.jpg)
+
+As you can see in the picture above, the basic
+architecture of docker consists of three main components:
+* Client
+* Docker host
+* Registry
+
+We are going to discuss more about them.
+
+## Docker Registry
+
+A docker registry stores DockerImages.
+The default Register is [Docker Hub](https://hub.docker.com/).
+
+## Docker Hub
+
+You can access [Docker Hub](https://hub.docker.com/) in your
+browser.
+For example, we can take a look at [Python image](https://hub.docker.com/_/python).
+There are different tags which each one represents different
+meaning.
+
+<!-- 
+TODO: add more details about each tag
+for example: alpine, bullseye, bookworm
+-->
+
 ## Docker Daemon
 
 ## Docker Client
 
 ## Image
 
-## Docker hub
-
 ## Container
+
+## DockerFile
+
+### layers
