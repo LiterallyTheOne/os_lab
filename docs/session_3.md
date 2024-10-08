@@ -149,7 +149,7 @@ There are some important options that we should know about
 * `-i`: Interactive, keeps STDIN open if not attached.
 * `-t`: Allocates a pseudo-TTY
 * `--name`: To give a name to a container
-* `--rm`: Automatically remove the container and all of its 
+* `--rm`: Automatically remove the container and all of its
   has created.
 * `-p`: publish a container's port to host
 
@@ -245,3 +245,41 @@ if we want to make a change in it, we should build another one.
 * `ESPOSE <port-number>`: Exposes which ports it is listening to
 * `CMD ["<command>", "<arg1>"]`: Sets the default command to
   run when the container starts.
+
+### Write a simple Dockerfile
+
+```dockerfile
+FROM python:alpine
+
+EXPOSE 8000
+
+CMD ["python", "-m", "http.server", "--bind", "0.0.0.0"]
+```
+
+* We want to use `python:alpine` for our base image
+* We tell everyone that we are listening to port `8000`
+* When container starts, run a simple http server.
+
+### Build the image
+
+To build the image we can run the code below when we are
+at the directory of `Dockerfile`:
+
+```shell
+docker build -t yek:latest .
+```
+
+### Run the container
+
+To run the container we can use:
+
+```shell
+docker run --rm -it -p 8000:8000 yek
+```
+
+### See the results
+
+To see the results we can simply write this url in our
+browser:
+
+* http://127.0.0.1:8000/
