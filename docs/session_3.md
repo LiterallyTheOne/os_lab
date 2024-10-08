@@ -212,4 +212,10 @@ ubuntu latest c22ec0081bf1 3 weeks ago 101MB
 
 ## DockerFile
 
+`DockerFile` is a text document that contains a series
+of instructions that tells docker how to build a
+`Docker image`.
+When a `Docker image` is created it becomes read-only,
+if we want to make a change in it, we should build another one.
+
 ### layers
