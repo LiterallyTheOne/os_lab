@@ -213,6 +213,19 @@ ubuntu latest c22ec0081bf1 3 weeks ago 101MB
 
 `docker rmi` removes one or more images.
 
+### `docker build`
+
+`docker build` can be used to build a Dockerfile.
+to give it a name we can use the below argument:
+
+* `-t`: specify tag
+
+For example:
+
+```shell
+docker build -t yek:latest .
+```
+
 ## DockerFile
 
 `DockerFile` is a text document that contains a series
