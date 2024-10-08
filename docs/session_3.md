@@ -88,6 +88,9 @@ and volumes.
 
 ### Docker Client
 
+Docker client (`docker`) is the main way that users
+interact with Docker.
+
 ### Docker Registry
 
 A docker registry stores DockerImages.
