@@ -33,9 +33,17 @@ great to run them anywhere.
 
 ## Install Docker
 
+To Install docker we have so many options.
+For the purpose of learning the best way to
+install docker is via docker desktop.
+It contains `Docker Daemon`, `Docker client` 
+and `Docker compose`.
+Also, it has a UI to control All the things that we need.
+
+To start with docker desktop you can use this
+[link](https://docs.docker.com/get-started/introduction/get-docker-desktop/).
 
 ## Run an example
-
 
 ## Docker Daemon
 
