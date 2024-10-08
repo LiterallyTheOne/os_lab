@@ -37,13 +37,29 @@ To Install docker we have so many options.
 For the purpose of learning the best way to
 install docker is via docker desktop.
 It contains `Docker Daemon`, `Docker client` 
-and `Docker compose`.
+and `Docker Compose` which we are going to work with a lot.
 Also, it has a UI to control All the things that we need.
 
 To start with docker desktop you can use this
 [link](https://docs.docker.com/get-started/introduction/get-docker-desktop/).
 
 ## Run an example
+
+Now that we have everything set up, we can run an example
+in our terminal of choice.
+Open a terminal and type the code below:
+
+```shell
+docker run -i -t ubuntu /bin/bash
+```
+
+If you don't have the `Ubuntu` image already,
+it would download it then it attaches a `bash` in it.
+We are going to learn about the `options` and the `arguments`
+of this command more.
+
+Right now, You should see a `bash terminal` opening up
+for you which you can run `bash` commands in it.
 
 ## Docker Daemon
 
