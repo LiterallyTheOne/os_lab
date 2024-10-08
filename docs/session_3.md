@@ -71,12 +71,28 @@ architecture of docker consists of three main components:
 * Docker host
 * Registry
 
+Docker uses a client-server architecture.
+Docker daemon listens to the Docker client.
+Both Docker daemon and Docker client can run
+on the same machine.
+But we can have remote Docker daemon as well.
+the communication between the Docker daemon and Docker client
+is through **REST API**.
 We are going to discuss more about them.
 
-## Docker Registry
+### Docker Daemon
+
+The **docker daemon** (`dockerd`) listens to the API requests and
+manages Docker objects such as images, containers, networks 
+and volumes.
+
+### Docker Client
+
+### Docker Registry
 
 A docker registry stores DockerImages.
 The default Register is [Docker Hub](https://hub.docker.com/).
+When we use `docker pull`, `Docker Daemon` pulls the required
 
 ## Docker Hub
 
@@ -91,9 +107,6 @@ TODO: add more details about each tag
 for example: alpine, bullseye, bookworm
 -->
 
-## Docker Daemon
-
-## Docker Client
 
 ## Image
 
