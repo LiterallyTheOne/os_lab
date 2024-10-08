@@ -151,6 +151,7 @@ There are some important options that we should know about
 * `--name`: To give a name to a container
 * `--rm`: Automatically remove the container and all of its 
   has created.
+* `-p`: publish a container's port to host
 
 for example:
 
