@@ -254,3 +254,25 @@ Also explain the output of it.
     `-- tmp
 ```
 
+### Common directories
+
+#### `/bin`
+
+Contains essential binaries (executables) for system operations.
+For example, if we `ls`, `/bin` directory, we can see that
+`pwd`, `ls`, `cp`, etc. are in it.
+
+#### `/boot`
+
+Contains the files that is needed to `boot` our system.
+For example `GRUB` stores the files required for booting
+in `/boot`.
+
+<!-- TODO: fact check -->
+
+#### `/dev`
+
+Contains the **device** files, including disks and
+peripherals (like printers).
+
+<!-- TODO: Complete it even more -->
