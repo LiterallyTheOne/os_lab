@@ -77,6 +77,32 @@ Some handy shortcuts:
 * `?`: search backward
 * `q`: quit
 
+## `head`
+
+Outputs the first part of the file.
+By default, it shows the first 10 lines.
+
+```shell
+user@host:~/os_lab$ head example.txt
+```
+
+options:
+
+* `-n`: outputs the first n lines
+
+## `tail`
+
+Outputs the last part of the file.
+By default, it shows the last 10 lines.
+
+```shell
+user@host:~/os_lab$ tail example.txt
+```
+
+options:
+
+* `-n`: outputs the first n lines
+
 ## Pipe (`|`)
 
 ## `grep`
