@@ -6,7 +6,6 @@ root: intro
 chapters:
 - file: session_1
 - file: session_2
-- file: session_3
 - file: session_3_a
 - file: session_4
 - file: session_5
