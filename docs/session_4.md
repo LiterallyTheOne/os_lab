@@ -1,5 +1,17 @@
 # Session 4: Linux commands and File system
 
+## `touch`
+
+To create a new file.
+For example:
+
+```shell
+user@host:~/os_lab$ touch example.txt
+```
+
+The code above creates a file called `example.txt`.
+
+
 ## Pipe (`|`)
 
 ## Grep (`|`)
