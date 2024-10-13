@@ -43,6 +43,40 @@ options:
 * `-l`, `--lines`: newline counts
 * `-w`, `--words`: word counts
 
+## `more`
+
+Display the contents of a file in terminal.
+The program closes when we reach `EOF`.
+
+```shell
+user@host:~/os_lab$ more example.txt
+```
+
+Some handy shortcuts:
+
+* `space`: continue
+* `q`: quit
+
+## `less`
+
+It is similar to `more` with more features.
+`less` is not required to read the entire file
+before starting (loads chunks of the file),
+so it has a better performance on reading large files.
+It has a search and `vi` like navigation.
+
+```shell
+user@host:~/os_lab$ less example.txt
+```
+
+Some handy shortcuts:
+
+* `g`: go to the top of the file
+* `G`: go to the bottom of the file
+* `/`: search forward
+* `?`: search backward
+* `q`: quit
+
 ## Pipe (`|`)
 
 ## `grep`
