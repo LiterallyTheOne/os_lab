@@ -45,7 +45,7 @@ options:
 
 ## Pipe (`|`)
 
-## Grep (`|`)
+## `grep`
 
 ## Linux File System
 
