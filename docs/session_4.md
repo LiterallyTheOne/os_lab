@@ -163,6 +163,8 @@ ls -l | wc -l
 
 ## `grep`
 
+## regex
+
 ## Linux File System
 
 <!--
