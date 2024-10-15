@@ -11,6 +11,12 @@ user@host:~/os_lab$ touch example.txt
 
 The code above creates a file called `example.txt`.
 
+## `cp`
+
+## `mv`
+
+## `rm`
+
 ## `wc`
 
 To get the **newline**, **word**, and **byte** counts of a file.
@@ -77,9 +83,87 @@ Some handy shortcuts:
 * `?`: search backward
 * `q`: quit
 
+## `head`
+
+Outputs the first part of the file.
+By default, it shows the first 10 lines.
+
+```shell
+user@host:~/os_lab$ head example.txt
+```
+
+options:
+
+* `-n`: outputs the first n lines
+
+## `tail`
+
+Outputs the last part of the file.
+By default, it shows the last 10 lines.
+
+```shell
+user@host:~/os_lab$ tail example.txt
+```
+
+options:
+
+* `-n`: outputs the first n lines
+
+## Redirect output to a file `>`
+
+With `>` we can redirect an output of a `command` to a `file`.
+
+```shell
+command > file.txt
+```
+
+for example:
+
+```shell
+ls -l > r1.txt
+```
+
+In the example above we have redirected the output of `ls -l` to
+a file with the name of `r1.txt`.
+
+## Redirect input to a file `<`
+
+With `<` we can redirect a file as an `input` to a `command`.
+
+```shell
+command < file.txt
+```
+
+for example:
+
+```shell
+ws -l < r1.txt
+```
+
+In the example above, we have redirected a file to
+`wc -l` to see how many lines does it have.
+
 ## Pipe (`|`)
 
+If we want to redirect the output of one command to another one,
+we can use `|`.
+
+```shell
+command1 | command2
+```
+
+For example, we know `ls -l` shows the file and directory names
+in lines with more details.
+We can pass the output of it to `wc -l` to see how many lines
+the output of `ls -l` has.
+
+```shell
+ls -l | wc -l
+```
+
 ## `grep`
+
+## regex
 
 ## Linux File System
 
