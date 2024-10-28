@@ -47,7 +47,60 @@ Important options:
 
 ## `mv`
 
+To move files or rename them, we can use `mv`.
+It's like **cuttuing** files.
+
+```shell
+mv source_path destination_path
+```
+
+For example:
+
+```shell
+mv f1.txt ramin/f1.txt
+```
+
+* `-f`, `--force`
+  * Don't notify before overwriting
+* `-i`, `--interactive`
+  * Notify before overwriting
+* `-v`, `--verbose`
+  * Explain what is happening
+* `-t`, `--target-directory`
+  * Move all sources to target directory
+* `-u`
+  * If an update is needed, keeps the `old` one
+* `-b`
+  * Creates **backups** of the existing files
+* `-n`, `--no-clobber`
+  * Do not overwrite an existing file
+
 ## `rm`
+
+Removes files and directories.
+
+```shell
+rm source_path
+```
+
+For example:
+
+```shell
+rm f1.txt
+```
+
+* `-r`, `--recursive`
+  * Removes directories and their content **recursively**
+* `-f`, `--force`
+  * Force to remove targets, even if they are write-protected or don't exist
+* `-i`, `--interactive`
+  * Notify before each removal
+* `-d`, `--directory`
+  * Remove empty directories
+* `-v`, `--verbose`
+  * Explain what is happening
+
+
 
 ## `wc`
 
