@@ -1,4 +1,4 @@
-# Session 4: Linux commands and File system
+# Session 4: Linux commands and Pipe
 
 ## `touch`
 
