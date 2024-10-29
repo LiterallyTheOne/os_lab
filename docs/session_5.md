@@ -139,6 +139,38 @@ different types of links:
 
 ## `grep`
 
+`grep` stands for **Global Regular Expression Print**.
+It searches for the patterns that can be found in the given files.
+
+synopsis:
+
+```shell
+grep [options] "pattern" filename
+```
+
+example:
+
+```shell
+grep "error" file1.txt
+```
+
+options:
+
+* `-i`: ignore case sensetive
+* `-r`: recusrively read all files in a directory
+* `-n`: show line numbers with results
+* `-c`: count occurrences
+* `-v`: invert match
+
+`grep` is mostly used with `|`. 
+
+for example:
+
+```shell
+ls -l | grep file1
+```
+
+
 ## regex
 
 ## Linux File System
