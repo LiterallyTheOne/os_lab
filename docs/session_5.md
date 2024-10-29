@@ -170,8 +170,22 @@ for example:
 ls -l | grep file1
 ```
 
-
 ## regex
+
+`Regex` is a sequence of characters that forms a search pattern.
+
+Metacharacter:
+
+* `.`: Match any character
+* `^`: Match the start of the line
+* `$`: Match the end of the line 
+* `*`: Match 0 or more occurrences of the previous element
+* `+`: Match 1 or more occurrences of the previous element
+* `[]`: character that we want
+* `\`: Don't apply the metacharacter
+* `{n}`: match exactly n times of the previous element 
+* `{n,}`: match n or more times of the previous element
+* `{n,m}`: match between n and m occurrences of the previous element
 
 ## Linux File System
 
