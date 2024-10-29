@@ -187,6 +187,10 @@ Metacharacter:
 * `{n,}`: match n or more times of the previous element
 * `{n,m}`: match between n and m occurrences of the previous element
 
+:::{note}
+https://regex101.com/ is a really great site to practice regex.
+:::
+
 ## Linux File System
 
 <!--
