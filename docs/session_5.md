@@ -49,6 +49,71 @@ Useful shortcuts:
 
 ## `vim`
 
+`Vim` is a powerful and highly configurable text editor that runs in the terminal.
+It is based on `Vi`.
+It is super effient when you master it.
+So many developers love `Vim`.
+Most Unix-based operating systems include `Vim` as thier text editor.
+
+### `Vim` modes
+
+`Vim` has different modes:
+
+* Normal mode:
+  * For navigation and text manipulation
+* Insert mode:
+  * For typing text (enter by `i`)
+* Visual mode:
+  * To select a text (enter by `v`)
+* Command mode:
+  * To execute commands (enter by `:`)
+* Replace mode:
+  * To replace existing text by directly writing on it (enter by `R`)
+
+### Open and close
+
+* Open a file: `vim file1.txt`
+* Save: `:w`
+* Close: `:q`
+* Save and close: `:wq`
+
+### Navigation
+
+* `h`: left
+* `j`: down
+* `k`: up
+* `l`: right
+* `w`: go to the start of the next word
+* `e`: go to the end of the next word
+* `b`: go to the start of the previous word
+* `gg`: go to the start of the file
+* `G`: go to the end-of-art of the file
+* `0`: go to the start of the line
+* `^`: go to the first non blank character in line
+* `$`: go to the end of the line
+
+### editing
+
+* `x`: delete a character under the cursor
+* `dw`: delete a word under the cursor
+
+### Insert mode
+
+To enter insert mode there are different options, some of them are:
+
+* `i`: enter insert mode before the cursor
+* `a`: enter insert mode after the cursor
+* `o`: open a new line and enter insert mode
+
+### Visual mode
+
+To enter visual mode there are different options, some of them are:
+
+* `v`: enter visual mode
+* `V`: enter line-wise visual mode
+* `ctrl+v`: enter column-wise visual mode
+
+
 ## `ln`
 
 makes links between files.
