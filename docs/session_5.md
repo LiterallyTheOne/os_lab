@@ -2,7 +2,50 @@
 
 ## `gedit`
 
+`gedit` is a default text editor for `GNOME`.
+It is simple and useful.
+It has a good `GUI`.
+
+```shell
+gedit
+```
+
 ## `nano`
+
+Nano is a small and simple text editor for use on the terminal.
+It copied the interface and key bindings of the Pico editor but
+added several missing features:
+* undo/redo
+* syntax highlighting
+* line numbers
+* softwrapping
+* multiple buffers
+* selecting text by holding Shift
+* search-and-replace with regular expressions
+* and several other conveniences.
+
+It is pretty handy when it comes to:
+* quick edits
+* configuration file changes,
+* working via ssh
+
+```shell
+nano file1.txt
+```
+
+Here is a look of it:
+
+![Nano example](figures/nano_example.png)
+
+As you can see options and shortcuts are displayed on the bottom of the terminal.
+
+Useful shortcuts:
+* `Ctrl + O`: Save
+* `Ctrl + X`: Exit
+* `Ctrl + K`: Cuts the entire line
+* `Ctrl + U`: Paste at cursor
+* `Ctrl + W`: Find 
+* `Ctrl + \`: Replace
 
 ## `vim`
 
