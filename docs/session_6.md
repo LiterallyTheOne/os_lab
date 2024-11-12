@@ -1,5 +1,7 @@
 # Session 6: chmod and Linux file system
 
+## `chmod`
+
 
 ## Linux File System
 
