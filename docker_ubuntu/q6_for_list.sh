@@ -40,4 +40,10 @@ echo ------
 h=(1 2 3 4)
 h+=(5 6)
 
-echo "${h[@]}"
+echo ${h[@]}
+
+echo ------
+
+for f in d1/*; do
+    echo $f
+done
