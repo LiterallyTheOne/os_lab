@@ -1,1 +1,1 @@
-# Session 7
+# Session 7: user control and bash scripting
