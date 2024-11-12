@@ -1,0 +1,9 @@
+services:
+  simple_ubuntu:
+    build:
+      context: .
+    stdin_open: true # Keeps the standard input open, useful for attach and exec
+    tty: true # Enables a terminal interface 
+    container_name: simple_ubuntu
+    volumes:
+      - ./:/app
