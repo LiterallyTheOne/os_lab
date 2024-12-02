@@ -223,10 +223,73 @@ output:
 We are in Operating System Laboratory!
 ```
 
+There are multiple advantages that `${}` has over `$`:
+
+* can extend it easier: `${a}another`
+* You can manipulate string with it
+  * slicing: `${a:0:5}` -> "Oper"
+  * substring replacement: `${a/Operating/new}` -> "new System Laboratory!"
+  * length: `${#a}` -> 21
+* default value: `${var:-default_value}` -> `default_value` if `var` is not set.
+* working with arrays: `${array[0]}` -> first element of the array.
 
 
+## Arguments
+
+You can pass arguments to a bash script when you run it.
+
+For example:
+
+```shell 
+./script.sh "Hello" "World"
+```
+
+The code above passes two arguments `"Hello"` and `"World"` to the `script.sh` file.
+You can access these arguments in your script using `$1`, `$2`, etc.
+
+For example if we have a script like this:
+
+```shell
+#!/bin/bash
+
+echo "First argument: $1"
+echo "Second argument: $2"
+```
+
+the output of `./script.sh "Hello" "World"` would be:
+
+```text
+First argument: Hello
+Second argument: World
+```
+
+* `$0`: the name of the script.
+* `$1`, `$2`, etc.: the individual arguments passed to the script.
+* `$#`: the number of arguments passed to the script.
+* `$@`: all the arguments passed to the script as a list.
+* `$*`: all the arguments passed to the script as a single string.
 
 
+## Write a backup script
 
+Now lets write a script that backups the files of the given directory.
+The result directory should be in this format:
 
+* `backup-YY-MM-DD-HH-MM-SS)`
 
+the code for doing that would be something like below:
+
+```shell
+#! /bin/bash
+
+# name our directory
+target_dir="backup-$(date +%Y-%m-%d-%H-%M-%S)"
+
+# create the backup directory
+mkdir $target_dir
+
+# copy all files from the source directory to the target directory
+cp -r $1 $target_dir
+
+echo "done"
+```
