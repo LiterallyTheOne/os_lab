@@ -270,6 +270,15 @@ Second argument: World
 * `$*`: all the arguments passed to the script as a single string.
 
 
+## command substitution
+
+You can use command substitution (`$()`) to run a command and capture its output.
+
+For example:
+```shell
+current_year=$(date +%Y)
+```
+
 ## Write a backup script
 
 Now lets write a script that backups the files of the given directory.
