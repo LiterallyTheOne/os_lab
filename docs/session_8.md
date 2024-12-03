@@ -52,6 +52,10 @@ Options:
 * `-d`: directory exists (`[ -d dirname ]`)
 
 
+```{note}
+You can use `!` before a test command to invert its result. (`! [ $a -eq 1 ]`)
+```
+
 ## `if`
 
 The main syntanx of `if` in bash is like below:
