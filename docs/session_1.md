@@ -9,6 +9,7 @@ and applications.
 There are so many operating systems out there which were
 made for a specific purpose.
 Most famous ones are:
+
 * Windows
 * MacOS
 * Linux
@@ -34,6 +35,7 @@ exploring the essential concepts that make Linux such a
 powerful and useful tool.
 
 To summarize, Linux:
+
 * Widely used
 * Open-source
 * Free
@@ -89,6 +91,7 @@ operating system.
 
 Linux has so many distributions, The most important
 of them all are:
+
 * Ubuntu
   * Based on Debian
 * Debian
@@ -114,7 +117,7 @@ distro called: **Ubuntu**
 
 ## Opening a terminal emulator
 
-In **Ubuntu**, you can simply open a terminal 
+In **Ubuntu**, you can simply open a terminal
 using *Alt+Ctrl+T*.
 
 ## pwd
@@ -127,4 +130,3 @@ pwd
 
 The result of this command should show you the
 current working directory that you are in.
-
