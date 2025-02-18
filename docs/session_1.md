@@ -130,3 +130,19 @@ pwd
 
 The result of this command should show you the
 current working directory that you are in.
+
+Now let's open up a folder in vs-code.
+To access the terminal in vs-code you can use: *Ctrl+\`*.
+Now let's run the `pwd` command in the terminal of vs code.
+
+Now let's create a file `s1.sh` in the current directory.
+Then type the `pwd` command on that file.
+After that, open the vs-code terminal and write the following code:
+
+```bash
+sh s1.sh
+```
+
+This will execute the `s1.sh` file.
+So the output would be the output of the `pwd` command.
+This is how you can run a shell script.
