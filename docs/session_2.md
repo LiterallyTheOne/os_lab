@@ -259,3 +259,13 @@ There are multiple advantages that ${} has over $:
 * length: ${#a} -> 21
 * default value: ${var:-default_value} -> default_value if var is not set.
 * working with arrays: ${array[0]} -> first element of the array.
+
+## Command substitution
+
+You can use command substitution `$()` to get the output of a command.
+
+For example:
+
+```shell
+a=$(ls)
+```
