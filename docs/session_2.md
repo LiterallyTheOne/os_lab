@@ -182,6 +182,39 @@ Different directories are separated with `/`.
 
 To clear the terminal.
 
+## `cp`
+
+To copy file or directory from the source to destination path.
+
+```shell
+cp source_path destination_path
+```
+
+For example:
+
+```shell
+cp f1.txt ramin/f1.txt
+```
+
+To copy a directory we can use `-r` option, which stands for `recursive`.
+
+Important options:
+
+* `-r`, `--recursive`
+  * To copy recursively, can be used to copy directories
+* `-f`, `--force`
+  * If the desitination file cannot be oppend, remove it and try again
+* `-l`, `--link`
+  * Create a `hard link` instead of copying
+* `-v`, `--verbose`
+  * Explain what is happening
+* `-i`, `--interactive`
+  * Notifies us if we want to overwrite  
+* `-p`
+  * Keeps the ownership, timestamps
+* `-u`
+  * If an update is needed, keeps the `old` one
+
 ## echo
 
 To print something in the terminal.
