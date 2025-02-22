@@ -221,3 +221,48 @@ user@host:~/os_lab$ cat >> f1.txt
 Hello world especially cat.
 Hello me.
 ```
+
+## echo
+
+To print something in the terminal.
+
+```shell
+echo hi
+```
+
+## define a variable
+
+To define a variable we can simply use `=`.
+For example:
+
+```shell
+a="Hello"
+```
+
+## Get the value of a variable
+
+To get the value of a variable, we can use `$`.
+For example:
+
+```shell
+echo $a
+```
+
+## ${}
+
+`${}` is like `$` but with more advanced features.
+For example:
+
+```shell
+echo "Hello: ${a}"
+```
+
+There are multiple advantages that ${} has over $:
+
+* can extend it easier: ${a}another
+* You can manipulate string with it
+  * slicing: ${a:0:5} -> "Oper"
+  * substring replacement: ${a/Operating/new} -> "new System Laboratory!"
+* length: ${#a} -> 21
+* default value: ${var:-default_value} -> default_value if var is not set.
+* working with arrays: ${array[0]} -> first element of the array.
