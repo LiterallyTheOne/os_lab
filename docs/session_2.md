@@ -247,6 +247,7 @@ echo $a
 For example:
 
 ```shell
+a="Operating System Laboratory"
 echo "Hello: ${a}"
 ```
 
