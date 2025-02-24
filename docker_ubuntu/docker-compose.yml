@@ -6,4 +6,4 @@ services:
     tty: true # Enables a terminal interface 
     container_name: simple_ubuntu
     volumes:
-      - ./:/app
+      - ../src:/app
