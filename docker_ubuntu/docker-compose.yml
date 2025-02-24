@@ -7,3 +7,4 @@ services:
     container_name: simple_ubuntu
     volumes:
       - ../src:/app
+      - ./example_dir:/example_dir
