@@ -276,3 +276,9 @@ For example:
 ```shell
 a=$(ls)
 ```
+
+## Backup script
+
+Now let's put all the things that we have learned together and
+write a script that anytime that we run it, it takes a backup
+of a certain directory by copying all the content of it.
