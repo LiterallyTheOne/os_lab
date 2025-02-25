@@ -140,6 +140,12 @@ For example:
 user@host:~$ man ls
 ```
 
+`man` supports `vi` basic commands.
+(You can press `H` to enter the help and see all the capabalities).
+For example to search in a `man` window we can use, `/` followed by the pattern.
+To search **list**, we can use: `/list`.
+(`n` goes to the next result and `Shift+n` goes to the previous result).
+
 ## `mkdir`
 
 To create a new directory.
