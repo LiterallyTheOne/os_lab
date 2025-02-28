@@ -1,5 +1,13 @@
 # Session 2: Basic commands
 
+## Goal
+
+* make a simple backup script
+
+### Bonus point
+
+* add a date to the name of the backup directory
+
 ## Some necessary things in terminal
 
 When you open up a `terminal` in `Ubuntu`
