@@ -92,6 +92,39 @@ the output of `ls -l` has.
 ls -l | wc -l
 ```
 
+## Arguments
+
+You can pass arguments to a bash script when you run it.
+
+For example:
+
+```shell
+sh script.sh "Hello" "World"
+```
+
+The code above passes two arguments `"Hello"` and `"World"` to the `script.sh` file.
+You can access these arguments in your script using `$1`, `$2`, etc.
+
+For example if we have a script like this:
+
+```shell
+echo "First argument: $1"
+echo "Second argument: $2"
+```
+
+the output of `./script.sh "Hello" "World"` would be:
+
+```text
+First argument: Hello
+Second argument: World
+```
+
+* `$0`: the name of the script.
+* `$1`, `$2`, etc.: the individual arguments passed to the script.
+* `$#`: the number of arguments passed to the script.
+* `$@`: all the arguments passed to the script as a list.
+* `$*`: all the arguments passed to the script as a single string.
+
 ## See the output of the last command
 
 With `$?` we can see the output of the last command.
