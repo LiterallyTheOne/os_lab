@@ -173,6 +173,22 @@ directories if they don't exist.
 user@host:~$ mkdir dir4/dir5
 ```
 
+## `touch`
+
+To create a new file we can use `touch`.
+
+```shell
+touch file
+```
+
+For example:
+
+```shell
+touch example.txt
+```
+
+In the example above, a file with the name of `example.txt` is created.
+
 ## `cd`
 
 This command helps us to change the working directory.
