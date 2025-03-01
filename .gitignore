@@ -1,3 +1,5 @@
 /.idea
 
 docs/_build
+
+docker_ubuntu/example_dir/todo.txt
