@@ -1,5 +1,37 @@
 # Session 3: Commands and pipe
 
+## `wc`
+
+To get the **newline**, **word**, and **byte** counts of a file.
+For example if we have a file like below
+
+```text
+line 1
+line 2
+line 3
+line 4
+line 5
+```
+
+If I run `wc` on it, it would be something like this:
+
+```shell
+user@host:~/os_lab$ touch example.txt
+       4      10      34 example.txt
+```
+
+To explain the output, we can say we have **4** `\n` (newlines),
+**10** words and **34** bytes(every character **1** byte, we have **6**
+characters in each line, by having **5** lines it results in **6x5=30**
+Also we have 4 `\n`, so it becomes **30+4=34**).
+
+options:
+
+* `-c`, `--bytes`: byte counts
+* `-m`, `--chars`: character counts
+* `-l`, `--lines`: newline counts
+* `-w`, `--words`: word counts
+
 ## Redirect output to a file `>`
 
 With `>` we can redirect an output of a `command` to a `file`.
