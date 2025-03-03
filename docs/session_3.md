@@ -1,5 +1,14 @@
 # Session 3: Commands and pipe
 
+## Goal
+
+* Write a simple script for TODO list.
+
+### Bonus
+
+* Add task number.
+* Add date to the task.
+
 ## `wc`
 
 To get the **newline**, **word**, and **byte** counts of a file.
