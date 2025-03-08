@@ -76,6 +76,22 @@ In the example above we have set read and write permissions for all users (owner
 
 ## Use chmod instead of `sh` or `bash` for our executable scripts
 
+Now we can use `chmod` to make our scripts executable.
+Previously we used `sh` or `bash` to run our scripts.
+The only thing that we should do is at first line of our script add the following line:
+
+```shell
+#!/bin/bash
+```
+
+This line tells the system to use `bash` to run the script.
+
+Then we can use `chmod` to make the script executable for the owner of the file:
+
+```shell
+chmod u+x script.sh
+```
+
 ## `mv`
 
 ## `rm`
