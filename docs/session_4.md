@@ -29,7 +29,7 @@ for example if we have `rwxr-xr--` it means:
 With `chmod` we can change these permissions.
 There are two ways to change the permissions:
 
-1. Symbolic method:
+### Symbolic method
 
 In symbolic method, we can use the following symobls to controll users:
 
@@ -74,6 +74,28 @@ chmod a=rw file
 
 In the example above we have set read and write permissions for all users (owner, group, others).
 
+### Numberic method
+
+In this method we use numbers to change the permissions.
+
+| read | write | execute |
+|------|-------|---------|
+| 4    | 2     | 1       |
+
+For example:
+
+```shell
+chmod 754 file
+```
+
+In the example above we have set read, write and execute permissions for the owner of the file,
+read and execute permissions for the group
+and read permission for others.
+
+* 7 = 4 + 2 + 1 = rwx
+* 5 = 4 + 1 = rx
+* 4 = 4 = r
+
 ## Use chmod instead of `sh` or `bash` for our executable scripts
 
 Now we can use `chmod` to make our scripts executable.
@@ -91,6 +113,8 @@ Then we can use `chmod` to make the script executable for the owner of the file:
 ```shell
 chmod u+x script.sh
 ```
+
+## `chown`
 
 ## `mv`
 
