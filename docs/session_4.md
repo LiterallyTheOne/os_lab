@@ -114,8 +114,6 @@ Then we can use `chmod` to make the script executable for the owner of the file:
 chmod u+x script.sh
 ```
 
-## `chown`
-
 ## `mv`
 
 ## `rm`
