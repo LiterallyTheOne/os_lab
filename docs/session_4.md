@@ -183,6 +183,15 @@ For example:
 ln f1.txt ramin/f1.txt
 ```
 
+* `-s`, `--symbolic`
+  * Make symbolic links
+* `-f`, `--force`
+  * Remove existing destination files
+* `-i`, `--interactive`
+  * Notify before overwriting
+* `-v`, `--verbose`
+  * Explain what is happening
+
 different types of links:
 
 * **Hard link**
