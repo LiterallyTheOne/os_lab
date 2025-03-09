@@ -169,11 +169,32 @@ rm f1.txt
 * `-v`, `--verbose`
   * Explain what is happening
 
+## `ln`
+
+makes links between files.
+
+```shell
+ln target link_name
+```
+
+For example:
+
+```shell
+ln f1.txt ramin/f1.txt
+```
+
+different types of links:
+
+* **Hard link**
+  * Point to the data to hard drive
+* **Symbolic (soft) link**
+  * Point to a file
+
+![hard link vs soft link](figures/hard_vs_soft_links.jpg)
+
 ## `top`
 
 ## `ps`
-
-## `ln`
 
 ## `read`
 
