@@ -184,7 +184,7 @@ ln f1.txt ramin/f1.txt
 ```
 
 * `-s`, `--symbolic`
-  * Make symbolic links
+  * Make symbolic (soft) links
 * `-f`, `--force`
   * Remove existing destination files
 * `-i`, `--interactive`
@@ -201,9 +201,9 @@ different types of links:
 
 ![hard link vs soft link](figures/hard_vs_soft_links.jpg)
 
-## `top`
-
 ## `ps`
+
+## `top`
 
 ## `read`
 
