@@ -342,9 +342,139 @@ echo -e "BTC 89.12\nETH 42\nDOGE 1.25" | awk '$2 > 30 {print $1}'
 
 ## `read`
 
+## range
+
+To define a range we can use `{start..end}`.
+For example:
+
+```shell
+echo {1..5}
+```
+
+Output:
+
+```text
+1 2 3 4 5
+```
+
+We can also add a step to the range.
+For example:
+
+```shell
+echo {1..5..2}
+```
+
+output:
+
+```text
+1 3 5
+```
+
+## list
+
+To define a list in bash we can do like below:
+
+```shell
+list=("apple" "banana" "cherry")
+```
+
+To access one of its elements we can use index like below:
+
+```shell
+echo ${list[0]}
+```
+
+To access all elements of a list in a string we can use `*` like below:
+
+```shell
+echo ${list[*]}
+```
+
+To accress all elements of a list in a way that we can iterate over them we can use `@` like below:
+
+```shell
+echo ${list[@]}
+```
+
 ## `for`
 
-## `array`
+The main syntanx of `for` loop in bash is like below:
+
+```shell
+for variable in list; do
+    # your code here
+done
+```
+
+For example:
+
+```shell
+for i in {1..5}; do
+    echo $i
+done
+```
+
+Output:
+
+```text
+1
+2
+3
+4
+5
+```
+
+In the example above we iterate over the range from 1 to 5 and print each number.
+
+To iterate over arguments we can use:
+
+```shell
+for arg in "$@"; do
+    echo $arg
+done
+```
+
+To iterate over a list of strings we can use:
+
+```shell
+for str in "apple" "banana" "cherry"; do
+    echo $str
+done
+```
+
+To iterate ove all the files in a directory we can use:
+
+```shell
+for file in dir1/*; do
+    echo file
+done
+```
+
+To iterate over all the content of a file we can use:
+
+```shell
+for line in $(cat filename); do
+    echo $line
+done
+```
+
+To iterate over a predefined list we can use:
+
+```shell
+a = ("apple" "banana" "cherry")
+for fruit in "${a[@]}"; do
+    echo $fruit
+done
+```
+
+We can also have `c` like for loop.
+For example:
+
+```shell
+for (( i=0; i<10; i++ )); do
+    echo $i
+done
+```
 
 ## `while`
 
