@@ -1,8 +1,10 @@
 #!/bin/bash
 
+a=0
+
 while true; do
 
-    echo "hi"
-    sleep 1
+    for i in {1..1000}; do :; done
+    sleep 0.1
 
 done
