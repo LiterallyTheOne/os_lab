@@ -256,11 +256,87 @@ tty
 
 ## `kill`
 
+To `kill` a process we can use the `kill` command.
+
+```shell
+kill -signal_number pid
+kill -signal_name pid
+```
+
+For example:
+
+```shell
+kill 1234
+```
+
+We have different signals to send to the process, the most used one is `9` which means `SIGKILL`.
+For example:
+
+```shell
+kill -9 1234
+```
+
+## `ctrl + c`
+
+To terminate a process we can use `ctrl + c`.
+
+## `ctrl + z`
+
+To stop a process we can use `ctrl + z`.
+The process goes to the background and after that we can contiue it again.
+
 ## `fg`
+
+To continue a process which is stopped we can use `fg`.
 
 ## `bg`
 
+To see the stopped processes we can use `bg`.
+
 ## `awk`
+
+`awk` is a powerful text-processing tool in Linux.
+
+```shell
+awk 'pattern { action }' filename
+```
+
+We can do so may different things with `awk`.
+Some of the basic things are:
+
+* Feild processing
+* Filter data
+
+### Field processing
+
+For example:
+
+```shell
+echo "s1 s2 s3" | awk '{print $2}'
+```
+
+the output will be `s2`.
+
+### Filter data
+
+For example:
+
+```shell
+echo -e "BTC 89.12\nETH 42\nDOGE 1.25" | awk '$2 > 30'
+```
+
+the output will be:
+
+```text
+BTC 89.12
+ETH 42
+```
+
+### Combination of field processing and filter data
+
+```shell
+echo -e "BTC 89.12\nETH 42\nDOGE 1.25" | awk '$2 > 30 {print $1}'
+```
 
 ## `top`
 
