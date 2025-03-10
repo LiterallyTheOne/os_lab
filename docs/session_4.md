@@ -342,6 +342,14 @@ echo -e "BTC 89.12\nETH 42\nDOGE 1.25" | awk '$2 > 30 {print $1}'
 
 ## `read`
 
+To read input from the user, you can use the `read` command.
+
+For example:
+
+```shell
+read name
+```
+
 ## range
 
 To define a range we can use `{start..end}`.
