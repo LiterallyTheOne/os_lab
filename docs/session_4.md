@@ -203,12 +203,75 @@ different types of links:
 
 ## `ps`
 
+`ps` is a command to show the active processes.
+
+```shell
+ps [OPTION]...
+```
+
+For example:
+
+```shell
+ps
+```
+
+The command above shows the active processes of the current user.
+By default it has the following columns:
+
+* `PID`
+  * Process ID
+* `TTY`
+  * Terminal
+* `TIME`
+  * Time
+* `CMD`
+  * Command
+
+* `-a`
+  * Shows all processes (without session leaders)
+* `-e`
+  * Shows all processes
+* `-f`
+  * Shows full format
+* `-l`
+  * Shows long format
+* `-x`
+  * Shows processes without terminals
+* `-u`
+  * Shows processes of the specified user
+
+For example to get more information about the processes which are currently running:
+
+```shell
+ps -ef
+```
+
+## `tty`
+
+`tty` is a command to show the terminal name.
+
+```shell
+tty
+```
+
+## `kill`
+
+## `fg`
+
+## `bg`
+
+## `awk`
+
 ## `top`
 
 ## `read`
 
 ## `for`
 
+## `array`
+
 ## `while`
+
+## `sleep`
 
 ## `switch case`
