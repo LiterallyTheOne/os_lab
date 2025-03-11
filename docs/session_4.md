@@ -340,6 +340,120 @@ echo -e "BTC 89.12\nETH 42\nDOGE 1.25" | awk '$2 > 30 {print $1}'
 
 ## `top`
 
+`top` is a powerful tool to monitor system performance in real time.
+It shows infromation about the CPU, memory, swap, and processes.
+
+```shell
+top
+```
+
+We can devide the output of the `top` into two parts:
+
+* Summary
+* Processes
+
+### Summary
+
+```text
+top - 10:23:45 up 2 days,  3:42,  2 users,  load average: 0.43, 0.57, 0.61
+Tasks: 212 total,   2 running, 210 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  5.3 us,  1.2 sy,  0.0 ni, 93.2 id,  0.1 wa,  0.0 hi,  0.2 si,  0.0 st
+MiB Mem :  7980.3 total,  3256.5 free,  1987.2 used,  2736.6 buff/cache
+MiB Swap:  2048.0 total,  2048.0 free,     0.0 used.  5240.2 avail Mem
+```
+
+* Current time:
+  * The current time.
+  * `10:23:45`
+* System uptime:
+  * How long the system has been running.
+  * `up 2 days,  3:42`
+* Number of users:
+  * The number of users currently logged in.
+  * `2 users`
+* Load average:
+  * The average number of processes in the runnable queue over the last 1, 5, and 15 minutes.
+  * `load average: 0.43, 0.57, 0.61`
+* Tasks:
+  * Total, running, sleeping, stopped, and zombie processes.
+  * `Tasks: 212 total,   2 running, 210 sleeping,   0 stopped,   0 zombie`
+* CPU usage:
+  * `us` (User): time spent running user processes.
+  * `sy` (System): time spent running kernel processes.
+  * `ni` (Nice): time spent running niced processes.
+  * `id` (Idle): time spent idle.
+  * `wa` (I/O Wait): time spent waiting for I/O operations to complete.
+  * `hi` (Hardware IRQ): time spent servicing hardware interrupts.
+  * `si` (Software Interrupts): time spent servicing software interrupts.
+  * `st` (Steal): time spent in other operating systems when running in a virtualized environment.
+  * `%Cpu(s):  5.3 us,  1.2 sy,  0.0 ni, 93.2 id,  0.1 wa,  0.0 hi,  0.2 si,  0.0 st`
+* Memory usage:
+  * Total memory, free memory, used memory, and memory used for buffers and cache.
+  * `MiB Mem :  7980.3 total,  3256.5 free,  1987.2 used,  2736.6 buff/cache`
+* Swap usage:
+  * Total swap, free swap, used swap, and available memory.
+  * `MiB Swap:  2048.0 total,  2048.0 free,     0.0 used.  5240.2 avail Mem`
+
+### Processes
+
+```text
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+ 1234 user      20   0  400000  30000   5000 R   12.3  1.2   0:01.23 firefox
+ 5678 root      20   0  250000  20000   3000 S    2.0  0.8   0:00.56 systemd
+```
+
+* `PID`: Process ID.
+* `USER`: User who owns the process.
+* `PR`: Priority.
+* `NI`: Nice value.
+* `VIRT`: Virtual memory used by the process.
+* `RES`: Resident memory used by the process.
+* `SHR`: Shared memory used by the process.
+* `S`: Process status.
+  * `R`: Running.
+  * `S`: Sleeping.
+  * `D`: Waiting for I/O.
+  * `Z`: Zombie.
+* `%CPU`: CPU usage.
+* `%MEM`: Memory usage.
+* `TIME+`: Total CPU time.
+* `COMMAND`: Command name.
+
+### useful shotcuts
+
+* `q`
+  * Quit `top`.
+* `h`
+  * Show help.
+* `k`
+  * Kill a process.
+* `r`
+  * Renice a process. (for this you should have root privilages)
+* `u`
+  * Filter by user.
+* `M`
+  * Sort by memory usage.
+* `P`
+  * Sort by CPU usage.
+* `m`
+  * Toggle memory summary.
+* `t`
+  * Toggle process summary.
+* `1`
+  * Toggle CPU summary.
+* `c`
+  * Toggle command name.
+* `i`
+  * Toggle idle processes.
+* `n`
+  * Set the number of processes to show.
+* `W`
+  * Write the current configuration to a file.
+* `Z`
+  * Add color theme.
+* `z`
+  * Toggle color theme.
+
 ## `read`
 
 To read input from the user, you can use the `read` command.
