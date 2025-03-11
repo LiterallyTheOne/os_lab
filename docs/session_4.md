@@ -246,6 +246,13 @@ For example to get more information about the processes which are currently runn
 ps -ef
 ```
 
+One of the most used option is `aux`.
+Despite being deprecated, it is still widely used.
+
+```shell
+ps aux
+```
+
 ## `tty`
 
 `tty` is a command to show the terminal name.
