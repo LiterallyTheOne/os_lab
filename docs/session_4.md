@@ -1,5 +1,18 @@
 # Session 4
 
+## Goal
+
+Write a script to monitor some specefic apps.
+
+* If the app is not running, notify us.
+* Report cpu usage
+* Report memory usage
+* If the app is taking so much cpu or memory, notify us.
+
+## Bonus
+
+
+
 ## `chmod`
 
 Is a command to change the permissions of a file or directory.
