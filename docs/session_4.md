@@ -345,6 +345,24 @@ ETH 42
 echo -e "BTC 89.12\nETH 42\nDOGE 1.25" | awk '$2 > 30 {print $1}'
 ```
 
+## `bc`
+
+`bc` (basic calculator) is a command-line calculator.
+In normal bash we can't deal with float numbers.
+But with `bc` we can achieve that.
+
+```shell
+bc
+```
+
+For example:
+
+```shell
+echo "2.3 + 5.1" | bc
+```
+
+result would be `7.4`.
+
 ## `top`
 
 `top` is a powerful tool to monitor system performance in real time.
