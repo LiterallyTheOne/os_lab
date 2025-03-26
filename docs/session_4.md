@@ -79,7 +79,7 @@ In the example above we have set read and write permissions for all users (owner
 In this method we use numbers to change the permissions.
 
 | read | write | execute |
-|------|-------|---------|
+| ---- | ----- | ------- |
 | 4    | 2     | 1       |
 
 For example:
