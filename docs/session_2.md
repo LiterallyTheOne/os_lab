@@ -1,4 +1,4 @@
-# Session 2: Basic commands
+# Session 2: Basic commands and Basic Bash Scripting
 
 ## Goal
 

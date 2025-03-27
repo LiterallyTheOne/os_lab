@@ -1,4 +1,4 @@
-# Session 5: File System
+# Session 5: File System, case and function
 
 ## `case`
 

@@ -1,4 +1,4 @@
-# Session 3: Commands and pipe
+# Session 3: Commands, redirect and if statement
 
 ## Goal
 

@@ -1,4 +1,4 @@
-# Session 4: Processes
+# Session 4: Processes and loops
 
 ## Goal
 
