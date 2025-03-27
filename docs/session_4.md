@@ -266,6 +266,31 @@ Despite being deprecated, it is still widely used.
 ps aux
 ```
 
+Columns in `ps aux` are:
+
+* `USER`
+  * User name
+* `PID`
+  * Process ID
+* `%CPU`
+  * Percentage of CPU usage
+* `%MEM`
+  * Percentage of Memory usage
+* `VSZ`
+  * Virtual memory size
+* `RSS`
+  * Resident set size
+* `TTY`
+  * Terminal
+* `STAT`
+  * Process status
+* `START`
+  * Start time
+* `TIME`
+  * CPU time
+* `COMMAND`
+  * Command
+
 ## `tty`
 
 `tty` is a command to show the terminal name.
