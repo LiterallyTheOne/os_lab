@@ -101,6 +101,14 @@ For hardware devices we have two types of files:
 * `/etc/sudoers`
   * Sudoers file (user permissions)
 
+### `/home`
+
+`/home` contains the home directories of the users.
+For example:
+
+* `/home/ramin`
+  * Home directory of user `ramin`
+
 ## `case`
 
 To write a `case` statement in bash script, we can use the following syntax:
