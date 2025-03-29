@@ -38,6 +38,7 @@ For hardware devices we have two types of files:
   * For example: hard disks, USB drives, CD-ROMs
 * character devices (`c`)
   * Data is read/written one character at a time
+  * They have direct access to the hardware
   * For example: keyboard, mouse, serial ports
 
 * `/dev/sda` or `/dev/nvme0n1`
