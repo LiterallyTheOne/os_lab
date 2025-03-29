@@ -77,6 +77,30 @@ For hardware devices we have two types of files:
   * Shared memory
   * It is used for inter-process communication (IPC)
 
+### `/etc`
+
+`/etc` contains the configuration files for the system.
+
+* `/etc/fstab`
+  * File system table
+  * It contains the information about the file systems
+* `/etc/systemd`
+  * Systemd configuration files (services)
+* `/etc/passwd`
+  * User account information
+* `/etc/shadow`
+  * User password information
+* `/etc/group`
+  * Group account information
+* `/etc/hostname`
+  * Hostname of the system
+* `/etc/hosts`
+  * Hostname resolution
+* `/etc/resolv.conf`
+  * DNS resolver configuration
+* `/etc/sudoers`
+  * Sudoers file (user permissions)
+
 ## `case`
 
 To write a `case` statement in bash script, we can use the following syntax:
