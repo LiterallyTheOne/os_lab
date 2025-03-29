@@ -95,6 +95,7 @@ understand it.
     * `b`: block file
   * `rwxrwxr-x`: shows permissions that we are going to discuss
       it later.
+* `2`: number of hard links to the file
 * `user`: which user owns the file
 * `group`: which group it belongs to
 * `4096`: size that is needed to store it
