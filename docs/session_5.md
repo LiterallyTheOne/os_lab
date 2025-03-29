@@ -109,6 +109,78 @@ For example:
 * `/home/ramin`
   * Home directory of user `ramin`
 
+### `/lib`
+
+`/lib` contains the shared libraries needed by the binaries in `/bin` and `/sbin`.
+For example:
+
+* `libc.so`
+  * C standard library
+* `libm.so`
+  * Math library
+* `libpthread.so`
+  * POSIX threads library
+
+### `/media`, `mnt`
+
+Mount points for removable media.
+
+### `/opt`
+
+`/opt` contains optional software packages.
+For example:
+
+* `/opt/google`
+  * Google software packages
+
+### `/proc`
+
+`/proc` is a virtual file system that contains information about the system and processes.
+Each process has a directory in `/proc` with its `PID`.
+In each directory, you can find these files:
+
+* `cmdline`
+  * Command line arguments of the process
+* `cwd`
+  * Current working directory of the process
+* `environ`
+  * Environment variables of the process
+* `fd`
+  * File descriptors of the process
+* `stat`
+  * Process status information
+* `status`
+  * Process status information (human-readable format)
+
+Also in `/proc` you can find:
+
+* `/proc/cpuinfo`
+  * Information about the CPU
+* `/proc/meminfo`
+  * Information about the memory
+* `/proc/version`
+  * Information about the kernel version
+* `/proc/uptime`
+  * System uptime
+* `/proc/sys`
+  * Kernel parameters (sysctl)
+* `/proc/vmstat`
+  * Virtual memory statistics
+* `/proc/devices`
+  * Character and block devices recognized by the kernel
+* `/proc/diskstats`
+  * Disk statistics
+* `/proc/partitions`
+  * Information about the partitions
+* `/proc/loadavg`
+  * System load average
+* `/proc/config.gz`
+  * Compressed kernel configuration file
+* `/proc/mounts`
+  * Information about the mounted file systems
+* `/proc/self`
+  * Information about the current process
+
 ## `case`
 
 To write a `case` statement in bash script, we can use the following syntax:
