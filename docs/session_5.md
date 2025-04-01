@@ -12,7 +12,6 @@ Make a file system manager with the menu like below:
 6) Delete File
 7) Exit
 
-
 ## File System
 
 Linux file system is a tree-like structure.
