@@ -1,5 +1,18 @@
 # Session 5: File System, case and function
 
+## Goal
+
+Make a file system manager with the menu like below:
+
+1) Create Directory
+2) List Files in Directory
+3) Create File
+4) Write to File
+5) Read File
+6) Delete File
+7) Exit
+
+
 ## File System
 
 Linux file system is a tree-like structure.
