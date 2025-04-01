@@ -193,6 +193,14 @@ Also in `/proc` you can find:
 * `/proc/self`
   * Information about the current process
 
+### `/root`
+
+`/root` is a home directory for the root user.
+
+### `/tmp`
+
+`/tmp` is a directory for temporarily files.
+
 ## `case`
 
 To write a `case` statement in bash script, we can use the following syntax:
