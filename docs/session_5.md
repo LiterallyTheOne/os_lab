@@ -18,6 +18,18 @@ For example:
 
 In modern Linux distributions, `/bin` is a symbolic link to `/usr/bin`.
 
+### `/sbin`
+
+`/sbin` stands for System Admininstration binaries.
+It contains binaries which is only accessable to the `superuser`.
+For example:
+
+* `ifconfig`
+* `ip`
+* `mount`
+* `shutdown`
+* `fdisk`
+
 ### `/boot`
 
 `/boot` contains the files needed to boot the system.
