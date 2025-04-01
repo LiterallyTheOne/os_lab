@@ -201,6 +201,23 @@ Also in `/proc` you can find:
 
 `/tmp` is a directory for temporarily files.
 
+### `/usr`
+
+`/usr` stands for **Unix System Resources** (user).
+It contains software and data that is shared among all users.
+
+* `/usr/bin`
+* `/usr/sbin`
+* `/usr/lib`
+* `/usr/local`
+* `/usr/share`
+* `/usr/include`
+* `/usr/src`
+
+### `/var`
+
+`/var` contains variable files like logs and caches.
+
 ## `case`
 
 To write a `case` statement in bash script, we can use the following syntax:
