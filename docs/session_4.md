@@ -11,7 +11,7 @@ Write a script to monitor some specefic apps.
 
 ## Bonus
 
-TODO: Fill it later
+* Monitor all the processes run by users expect root
 
 ## `chmod`
 
