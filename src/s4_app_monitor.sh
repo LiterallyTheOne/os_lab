@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apps=("s4_s1" "s4_s2")
+apps=("s4_cpu" "s4_memory")
 
 for app in ${apps[@]}; do
     if ps aux | grep -v grep | grep -q $app; then
