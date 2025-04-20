@@ -20,4 +20,19 @@ The reason that we wrote `export PATH=$PATH:/my/path` instead of
 simply writing `PATH=$PATH:/my/path` is that we want all the
 subprocesses of that `shell` also have the updated `PATH`.
 
+If we don't want to repeat the process of adding `my/path` to
+`PATH`, we can simply add it to our shell config file.
+If you are using `bash` it's in `~/.bashrc` and if you are
+using `zsh` it's in `~/.zshrc`.
+For example:
+
+```shell
+echo "export PATH=$PATH:/my/path" >> ~/.bashrc
+```
+
+The example above adds `export PATH=$PATH:/my/path` at the
+bottom of `~/.bashrc` file.
+Now anytime you make a new terminal `/my/path` will be added
+to your `PATH` variable.
+
 ## `man` page
