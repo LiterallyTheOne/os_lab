@@ -2,6 +2,35 @@
 
 ## Goal
 
+## `getopt`
+
+## `shift`
+
+`shift` shifts the arguments to the left.
+
+```bash
+shift # shifts the arguments by 1
+shift n # shifts the arguments by n
+```
+
+For example:
+
+If we have:
+
+```bash
+my_program apple banana orange
+```
+
+```bash
+echo $1 # apple
+shift
+echo $1 # banana
+```
+
+## `set`
+
+## `eval`
+
 ## `PATH`
 
 `PATH` is an environmental variable that tells the system
@@ -34,5 +63,6 @@ The example above adds `export PATH=$PATH:/my/path` at the
 bottom of `~/.bashrc` file.
 Now anytime you make a new terminal `/my/path` will be added
 to your `PATH` variable.
+
 
 ## `man` page
