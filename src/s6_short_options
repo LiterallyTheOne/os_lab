@@ -1,0 +1,27 @@
+#!/bin/bash
+
+options=$(getopt "ef:" "$@")
+
+eval set -- "$options"
+while true; do
+    case "$1" in
+    -e)
+        echo "Option e"
+        shift
+        ;;
+    -f)
+        echo "Option f: $2"
+        shift 2
+        ;;
+    --)
+        shift
+        break
+        ;;
+    *)
+        echo "Invalid option"
+        exit 1
+        ;;
+    esac
+done
+
+echo "Remaining arguments: $@"
