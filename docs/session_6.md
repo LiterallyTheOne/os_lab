@@ -1,6 +1,14 @@
 # Session 6: Bash project
 
-## Goal
+## `&`
+
+If we put `&` at the end of a command,
+it puts that command in the background.
+For example:
+
+```bash
+sleep 5 &
+```
 
 ## `shift`
 
