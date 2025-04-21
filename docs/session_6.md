@@ -2,6 +2,95 @@
 
 ## Goal
 
+## `shift`
+
+`shift` shifts the arguments to the left.
+
+```bash
+shift # shifts the arguments by 1
+shift n # shifts the arguments by n
+```
+
+For example:
+
+If we have:
+
+```bash
+my_program apple banana orange
+```
+
+```bash
+echo $1 # apple
+shift
+echo $1 # banana
+```
+
+## `set`
+
+`set` does mainly two things:
+
+* change shell behavior
+* set positional parameters
+
+### Change shell behavior
+
+To change the behavior of shell we can use `set` with options.
+Two of them are:
+
+* `-e`
+  * Exit immediately if a command exits with a non-zero status
+* `-x`
+  * Print each command before executing it
+
+```bash
+set -e
+echo hi
+false # exits with 1
+echo goodbye
+```
+
+output:
+
+```text
+hi
+```
+
+### set positional arguments
+
+To set positional arguments we can use something like below:
+
+```bash
+set -- apple banana orange
+```
+
+The command above replaces the current arguments with
+`apple`, `banana` and `orange`.
+So for example, right now apple is in `$1`.
+
+If we use set without any arguments, it shows all shell variables.
+
+## `eval`
+
+`eval` evaluates and executes an string as a bash command.
+It could be dangerous, so be careful about the command you are
+passing to `eval` to run.
+
+```bash
+eval command
+```
+
+For example:
+
+```bash
+eval "echo hi"
+```
+
+output:
+
+```text
+hi
+```
+
 ## `getopt`
 
 `getopt` is a command line that helps us to parse the arguments.
@@ -96,95 +185,6 @@ Then, at `eval set -- "$options"` line, we set the **parsed options**
 as the new arguments of our script.
 After that, with a `while`, we go trough all the new arguments to do
 the necessary things needed for each one.( we go to the next argument using `shift`)
-
-## `shift`
-
-`shift` shifts the arguments to the left.
-
-```bash
-shift # shifts the arguments by 1
-shift n # shifts the arguments by n
-```
-
-For example:
-
-If we have:
-
-```bash
-my_program apple banana orange
-```
-
-```bash
-echo $1 # apple
-shift
-echo $1 # banana
-```
-
-## `set`
-
-`set` does mainly two things:
-
-* change shell behavior
-* set positional parameters
-
-### Change shell behavior
-
-To change the behavior of shell we can use `set` with options.
-Two of them are:
-
-* `-e`
-  * Exit immediately if a command exits with a non-zero status
-* `-x`
-  * Print each command before executing it
-
-```bash
-set -e
-echo hi
-false # exits with 1
-echo goodbye
-```
-
-output:
-
-```text
-hi
-```
-
-### set positional arguments
-
-To set positional arguments we can use something like below:
-
-```bash
-set -- apple banana orange
-```
-
-The command above replaces the current arguments with
-`apple`, `banana` and `orange`.
-So for example, right now apple is in `$1`.
-
-If we use set without any arguments, it shows all shell variables.
-
-## `eval`
-
-`eval` evaluates and executes an string as a bash command.
-It could be dangerous, so be careful about the command you are
-passing to `eval` to run.
-
-```bash
-eval command
-```
-
-For example:
-
-```bash
-eval "echo hi"
-```
-
-output:
-
-```text
-hi
-```
 
 ## `PATH`
 
