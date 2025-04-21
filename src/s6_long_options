@@ -1,0 +1,28 @@
+#!/bin/bash
+
+options=$(getopt -o "ef:" --long "example,field:" -- "$@")
+
+eval set -- "$options"
+
+while true; do
+    case "$1" in
+    -e | --example)
+        echo "Option e"
+        shift
+        ;;
+    -f | --field)
+        echo "Option f: $2"
+        shift 2
+        ;;
+    --)
+        shift
+        break
+        ;;
+    *)
+        echo "Invalid option"
+        exit 1
+        ;;
+    esac
+done
+
+echo "Remaining arguments: $@"
