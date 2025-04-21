@@ -219,5 +219,4 @@ bottom of `~/.bashrc` file.
 Now anytime you make a new terminal `/my/path` will be added
 to your `PATH` variable.
 
-
 ## `man` page
