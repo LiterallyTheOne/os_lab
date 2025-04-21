@@ -338,3 +338,12 @@ Options:
 Example:
 
 s6 run  
+
+### Some options to look after
+
+| command | option |
+| ------- | ------ |
+| `date`  | `+%s`  |
+| `date`  | `-u`   |
+| `date`  | `-d`   |
+| `ps`    | `-p`   |
