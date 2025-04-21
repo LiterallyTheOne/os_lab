@@ -1,8 +1,9 @@
 #!/bin/bash
 
-options=$(getopt "ef:" "$@")
+options=$(getopt -o "ef:" -- "$@")
 
 eval set -- "$options"
+
 while true; do
     case "$1" in
     -e)
