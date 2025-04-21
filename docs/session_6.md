@@ -29,6 +29,48 @@ echo $1 # banana
 
 ## `set`
 
+`set` does mainly two things:
+
+* change shell behavior
+* set positional parameters
+
+### Change shell behavior
+
+To change the behavior of shell we can use `set` with options.
+Two of them are:
+
+* `-e`
+  * Exit immediately if a command exits with a non-zero status
+* `-x`
+  * Print each command before executing it
+
+```bash
+set -e
+echo hi
+false # exits with 1
+echo goodbye
+```
+
+output:
+
+```text
+hi
+```
+
+### set positional arguments
+
+To set positional arguments we can use something like below:
+
+```bash
+set -- apple banana orange
+```
+
+The command above replaces the current arguments with
+`apple`, `banana` and `orange`.
+So for example, right now apple is in `$1`.
+
+If we use set without any arguments, it shows all shell variables.
+
 ## `eval`
 
 ## `PATH`
