@@ -220,3 +220,73 @@ Now anytime you make a new terminal `/my/path` will be added
 to your `PATH` variable.
 
 ## `man` page
+
+To write a manual page for our shell script,
+we can create a file with the extension of `.1`
+(for example: s6_parsing_arguments.1)
+then with its own syntax we can complete our
+manual file.
+Some of the most important syntaxes are:
+
+| Directive | Purpose                                |
+| --------- | -------------------------------------- |
+| .TH       | Title Header                           |
+| .SH       | Section Header                         |
+| .B / .BR  | Bold (or Bold-then-Roman)              |
+| .TP       | Tagged paragraph (for options listing) |
+| \fI...\fR | Italic / return to normal              |
+
+So if we want to write a manual page for the script that we
+wrote in the `getopt` section, it would be something like below:
+
+```text
+.TH s6_parsin_arguments 1 "April 21, 2025" "1.0" "User commands"
+.SH NAME
+s6_parsing_arguments \- parses the options
+.SH SYNOPSIS
+\fBs6_parsing_arguments\fR [\fIoptions\fR] [\fIarguments\fR]
+.SH DESCRIPTION
+Takes some specific arguments and parse them.
+
+.BR \-a , \-\-alpha " " \fIvalue\fR
+
+Option alpha.
+Also takes a value.
+
+.BR \-b , \-\-beta
+
+Option beta.
+
+.BR \-c , \-\-gamma
+
+Option gamma.
+
+.SH EXAMPLES
+s6_parsing_arguments 42 -a "bash scripting" -b 25
+
+.SH AUTHOR
+Written by Ramin Zarebidoky.
+
+.SH COPYRIGHT
+MIT license.
+
+.SH SEE ALSO
+\fIgetopt\fR.
+```
+
+I would recommend you to use an template and build your
+manual over on that template.
+
+After You have your manual file ready, you should
+put that in a place that the `man` command could find it.
+To do so you can follow these steps:
+
+* Put your manual file in a directory named `man1`.
+  * For example: `/home/user/manuals/man1/s6_parsing_arguments.1`
+* Add the line below to `~/.manpath`. (if `~/.manpath` doesn't exist make one)
+  * `MANDATORY_MANPATH /home/user/manuals`
+  * change `/home/user/manuals` to your desired path.
+* Run `mandb` in a terminal.
+  * This code adds your manual to the manuals recognizeable
+  by `man`.
+* Run `man s6_parsing_arguments` to see your manual
