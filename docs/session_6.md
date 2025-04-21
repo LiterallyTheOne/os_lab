@@ -73,6 +73,26 @@ If we use set without any arguments, it shows all shell variables.
 
 ## `eval`
 
+`eval` evaluates and executes an string as a bash command.
+It could be dangerous, so be careful about the command you are
+passing to `eval` to run.
+
+```bash
+eval command
+```
+
+For example:
+
+```bash
+eval "echo hi"
+```
+
+output:
+
+```text
+hi
+```
+
 ## `PATH`
 
 `PATH` is an environmental variable that tells the system
