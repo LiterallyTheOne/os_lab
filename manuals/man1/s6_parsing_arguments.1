@@ -1,0 +1,32 @@
+.TH s6_parsin_arguments 1 "April 21, 2025" "1.0" "User commands"
+.SH NAME
+s6_parsing_arguments \- parses the options
+.SH SYNOPSIS
+\fBs6_parsing_arguments\fR [\fIoptions\fR] [\fIarguments\fR]
+.SH DESCRIPTION
+Takes some specific arguments and parse them.
+
+.BR \-a , \-\-alpha " " \fIvalue\fR
+
+Option alpha.
+Also takes a value.
+
+.BR \-b , \-\-beta
+
+Option beta.
+
+.BR \-c , \-\-gamma
+
+Option gamma.
+
+.SH EXAMPLES
+s6_parsing_arguments 42 -a "bash scripting" -b 25
+
+.SH AUTHOR
+Written by Ramin Zarebidoky.
+
+.SH COPYRIGHT
+MIT license.
+
+.SH SEE ALSO
+\fIgetopt\fR.
