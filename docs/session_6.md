@@ -10,6 +10,18 @@ For example:
 sleep 5 &
 ```
 
+## `$!`
+
+It contains the pid of the last executed background process.
+For example:
+
+```bash
+sleep 5 &
+echo $!
+```
+
+output would be a number that represents the pid of that process.
+
 ## `shift`
 
 `shift` shifts the arguments to the left.
@@ -298,3 +310,31 @@ To do so you can follow these steps:
   * This code adds your manual to the manuals recognizeable
   by `man`.
 * Run `man s6_parsing_arguments` to see your manual
+
+## Project
+
+Make a project that runs some specefic codes and tell us its details.
+
+```{note}
+In the description below, we assume the name of our script file is `s6`
+```
+
+Commands:
+
+* `run` `"command"`:
+  * takes a command and run it
+  * For example: `s6 run "ls -l"`
+* `history`
+  * shows the history of the commands that we ran.
+  * For example: `s6 history`
+* `current`
+  * shows the processes that are currently running with their ram and cpu usage
+  * For example: `s6 current`
+
+Options:
+
+* `-s`, `--seconds`=<ins>INTEGER</ins>
+
+Example:
+
+s6 run  
