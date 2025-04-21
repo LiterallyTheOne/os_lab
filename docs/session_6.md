@@ -4,6 +4,99 @@
 
 ## `getopt`
 
+`getopt` is a command line that helps us to parse the arguments.
+It can deal with short (for example: `-e`) and long (for example: `--example`) options.
+
+```bash
+getopt [options] optstring parameters
+```
+
+* `optstring`:
+  * String of valid option characters
+* `parameters`
+  * list of arguments to be parsed ("$@").
+
+```{important}
+If an option needs and arguemnt, we put `:` after that.
+For example: "e:".
+```
+
+The most used format that is being used is:
+
+```bash
+getopt -o "a:bc" --long "alpha:,beta,gamma" -- "$@"
+```
+
+In the format above we have 3 short options (`-a`, `-b`, `-c`)
+and 3 long options (`--alpha`, `--beta`, `--gamma`).
+`-a` or `--alpha` option needs an additional argument because of
+the `:` that has after it.
+As you can see the long options are being separated by `,`.
+Because we set options with the `-o`,
+so we put `--` for `optstring`.
+For the parameters to be parsed, we put "$@",
+so all the arguemnts are being sent to the command.
+
+A full example of it would be something like that:
+
+```bash
+#!/bin/bash
+options=$(getopt -o a:bc --long alpha:,beta,gamma -- "$@")
+
+eval set -- "$options"
+
+while true; do
+    case "$1" in
+    -a | --alpha)
+        echo "Option a: $2"
+        shift 2
+        ;;
+    -b | --beta)
+        echo "Option b"
+        shift
+        ;;
+    -c | --gamma)
+        echo "Option c"
+        shift
+        ;;
+    --)
+        shift
+        break
+        ;;
+    *)
+        echo "Invalid option"
+        exit 1
+        ;;
+    esac
+done
+
+echo "Remaining arguments: $@"
+echo "Number of remaining arguments: $#"
+```
+
+For example, if we use a code like below:
+
+```bash
+./s6_parsing_arguments 42 -a "bash scripting" -b 25
+```
+
+The output would be like below:
+
+```text
+Option a: bash scripting
+Option b
+Remaining arguments: 42 25
+Number of remaining arguments: 2
+```
+
+In the code above,
+at `options=$(getopt -o a:bc --long alpha:,beta,gamma -- "$@")` line as descibed
+before we set the options that we need.
+Then, at `eval set -- "$options"` line, we set the **parsed options**
+as the new arguments of our script.
+After that, with a `while`, we go trough all the new arguments to do
+the necessary things needed for each one.( we go to the next argument using `shift`)
+
 ## `shift`
 
 `shift` shifts the arguments to the left.
