@@ -333,11 +333,26 @@ Commands:
 
 Options:
 
-* `-s`, `--seconds`=<ins>INTEGER</ins>
+* `-s`, `--seconds` \<int>
+  * Set the maximum seconds to run a command
+* `-t`, `--check-time` \<int>
+  * Set the check time in seconds
+* `-c`, `--command` \<str>
+  * Command to check in `current` and `history`
+* `-f`, `--format` \<str>
+  * Fromat of output of `current` and `history`
+* `-h`, `--help`
+  * Show help message
 
 Example:
 
-s6 run  
+```bash
+s6 run "sleep 10" -s 4 -t 2
+```
+
+In the example above, the command `sleep 10` will run
+only for **4 seconds** and its status will be reported every
+**2 seconds**.
 
 ### Some options to look after
 
